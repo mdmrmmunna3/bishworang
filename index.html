@@ -12,6 +12,9 @@
     <!-- bootstrap cdn link  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
+    <!-- raw/ vanila css link  -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -62,6 +65,28 @@
             </div>
         </div>
         <!-- ==== top header end ===== -->
+
+        <!-- ====== logo-search part start ===== -->
+        <nav class="navbar mx-2">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    <img src="assets/img/logo.png" alt="Bishworang logo" style="width: 150px;">
+                </a>
+                <div class="d-flex align-items-center">
+                    <form class="d-flex position-relative" role="search">
+                        <input class=" me-2 search" type="search" placeholder="Search for items" aria-label="Search">
+                        <span class="position-absolute search_icon" type="submit">
+                            <i class="fa-solid fa-magnifying-glass" style="color: #604b3b; font-size: 20px;"></i>
+                        </span>
+                    </form>
+                    <span style="margin-left: 15px;">
+                        <i class="fa-regular fa-heart" style="font-size: 25px; color: #604b3b;"></i>
+                    </span>
+                </div>
+            </div>
+        </nav>
+        <!-- ====== logo-search part end ===== -->
+
     </header>
 
     <!-- ============ header html part end ======== -->
