@@ -208,96 +208,82 @@
     <!-- ============ header html part end ======== -->
 
     <!-- ======= visible navbar html part start ======= -->
+
     <div id="secondaryNavbar" class="container-fluid d-none" style="background-color: #fff438;">
         <div class="row px-2 mx-0">
-            <div class="col-lg-1 col-2 d-flex justify-content-center align-items-center ">
+            <!-- Fixed Logo Column -->
+            <div class="col-lg-1 col-2 d-none d-md-flex justify-content-center align-items-center">
                 <img src="assets/img/logos/header_logo.png" style="width: 100px;" alt="bhisworang logo">
             </div>
 
-            <div class="col-lg-8 col-6">
+            <!-- Collapsible Navbar Column -->
+            <div class="col-lg-8 col-md-6 col-9">
                 <div class="row">
                     <div class="col-12">
-                        <nav class="navbar navbar-expand-lg navbar-light py-0 d-block d-md-none d-lg-block">
-                            <button class="navbar-toggler d-lg-none ms-auto" type="button" data-bs-toggle="collapse"
+                        <nav class="navbar navbar-expand-lg navbar-light py-0">
+                            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
                                 aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                            <div class="container">
-                                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                                    <ul class="navbar-nav navbar-nav2">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Home</a>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link nav_link3 dropdown-toggle" href="#" id="arrival"
-                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                New Arrival
-                                            </a>
-                                            <div class="dropdown-menu " aria-labelledby="arrival">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#" class="dropdown-header">Women item's</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="dropdown-header">Man item's</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="dropdown-header">Kid item's</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="dropdown-header">Gift & Craft</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="dropdown-header">Home Decor</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link nav_link3 dropdown-toggle" href="#" id="arrival"
-                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                Women's Collection
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="arrival">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#" class="dropdown-header">Sharee</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="dropdown-header">Kamiz</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="dropdown-header">Kurta</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="dropdown-header">Exclusive</a>
-                                                    </li>
-
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link nav_link3" href="#">Men's Collection</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link nav_link3" href="#">Kid's Collection</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link nav_link3" href="#">Couple Collection</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link nav_link3" href="#">Festival</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link nav_link3" href="#">JEWELLERY</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                                <ul class="navbar-nav navbar-nav2">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link nav_link3 dropdown-toggle" href="#" id="arrival"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            New Arrival
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="arrival">
+                                            <ul>
+                                                <li><a href="#" class="dropdown-header">Women item's</a></li>
+                                                <li><a href="#" class="dropdown-header">Man item's</a></li>
+                                                <li><a href="#" class="dropdown-header">Kid item's</a></li>
+                                                <li><a href="#" class="dropdown-header">Gift & Craft</a></li>
+                                                <li><a href="#" class="dropdown-header">Home Decor</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link nav_link3 dropdown-toggle" href="#" id="arrival"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Women's Collection
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="arrival">
+                                            <ul>
+                                                <li><a href="#" class="dropdown-header">Sharee</a></li>
+                                                <li><a href="#" class="dropdown-header">Kamiz</a></li>
+                                                <li><a href="#" class="dropdown-header">Kurta</a></li>
+                                                <li><a href="#" class="dropdown-header">Exclusive</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav_link3" href="#">Men's Collection</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav_link3" href="#">Kid's Collection</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav_link3" href="#">Couple Collection</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav_link3" href="#">Festival</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav_link3" href="#">JEWELLERY</a>
+                                    </li>
+                                </ul>
                             </div>
                         </nav>
                     </div>
                 </div>
+            </div>
+
+            <div class="col-lg-1 col-3 d-md-none d-flex justify-content-center align-items-center">
+                <img src="assets/img/logos/header_logo.png" style="width: 100px;" alt="bhisworang logo">
             </div>
 
             <div class="col-lg-3 col-md-4 d-none d-md-flex align-items-center justify-content-end">
@@ -306,10 +292,12 @@
                     <span style="color: #fca03c;">+880 1730-068036</span>
                 </div>
             </div>
-
         </div>
     </div>
+
     <!-- ======= visible navbar html part end ======= -->
+
+    <!-- ===== video html part start ===== -->
 
     <div class="container-fluid py-md-5 px-md-3 px-0">
 
