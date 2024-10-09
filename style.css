@@ -18,6 +18,12 @@ a {
 
 }
 
+@media only screen and (min-width:576px) and (max-width: 992px) {
+    .search {
+        width: 200px;
+    }
+}
+
 .search:focus {
     border: none;
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
@@ -53,7 +59,7 @@ a {
     border: none;
     border-radius: 0px;
     padding: 30px 10px;
-    border-top: 0;
+    border-top: 2px solid #b91c1c;
 }
 
 .dropdown-menu ul {
@@ -69,13 +75,14 @@ a {
 .nav_link2 {
     text-transform: uppercase;
     margin-right: 15px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .dropdown-menu li {
     white-space: nowrap;
     margin-right: 8px;
     border-bottom: 1px solid #fca5a5;
+    cursor: pointer;
 }
 
 .dropdown-menu .dropdown-header {
@@ -93,9 +100,55 @@ a {
     color: #fca03c;
 }
 
-.hotline .fa-phone:hover {
+.fa-phone:hover {
     color: #fca03c;
 }
+
+.navbar-nav2 {
+    gap: 6px;
+    flex-wrap: nowrap;
+}
+
+.nav_link3 {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/* scroling navbar   */
+
+#primaryNavbar {
+    transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    position: relative;
+    z-index: 1000;
+}
+
+#primaryNavbar.hide {
+    top: -100px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#secondaryNavbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#secondaryNavbar.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* body {
+    padding-top: 150px;
+} */
+
+
+/* scroling navbar   */
 
 /* header css end  */
 

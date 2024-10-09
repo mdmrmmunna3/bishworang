@@ -23,11 +23,11 @@
 
     <header>
         <!-- ==== top header start ===== -->
-        <div class="container-fluid py-2 text-light" style="background-color: #ad171a;">
+        <div class="container-fluid py-2 text-light d-none d-md-block" style="background-color: #ad171a;">
             <div class="row">
                 <!-- left_content part  -->
                 <div class="col-3 d-flex align-items-center justify-content-around">
-                    <span class="border-end pe-4" style="font-size: 15px;"> <span><i
+                    <span class="border-end pe-4 d-md-none d-lg-block " style="font-size: 15px;"> <span><i
                                 class="fa-solid fa-mobile-screen"></i></span> +88 01730 068036
                     </span>
 
@@ -38,7 +38,7 @@
                 <!-- marquee middle content  -->
 
                 <div class="col-6">
-                    <marquee behavior="" direction="left" scrollamount="3" class="mx-5">
+                    <marquee behavior="" direction="left" scrollamount="3" class="mx-lg-5 mx-md-3">
                         <span class="d-flex align-items-center" style="font-size: 14px;">DISCOUNT30 - কুপন কোডটি ব্যবহার
                             করে ওয়েবসাইট থেকে কেনাকাটায় ৩০%
                             মূল্যছাড় ! এই অফার সীমিত
@@ -49,7 +49,7 @@
                 <!-- right_content part -->
 
                 <div class="col-3 d-flex align-items-center justify-content-end">
-                    <span class="border-end pe-4" style="font-size: 15px;">
+                    <span class="border-end pe-4 d-md-none d-lg-block" style="font-size: 15px;">
                         <select name="" id="" style="background-color: transparent; border: none; color: white;">
                             <option class="text-black" value="BDT">BDT</option>
                             <option class="text-black" value="BDT">USD</option>
@@ -67,40 +67,48 @@
         <!-- ==== top header end ===== -->
 
         <!-- ====== logo-search part start ===== -->
-        <div class="navbar mx-2">
-            <div class="container-fluid">
-                <a class="navbar-brand">
-                    <img src="assets/img/logos/header_logo.png" alt="Bishworang logo" style="width: 150px;">
-                </a>
-                <div class="d-flex align-items-center">
-                    <form class="d-flex position-relative" role="search">
-                        <input class=" me-2 search" type="search" placeholder="Search for items" aria-label="Search">
+
+        <div class="container-fluid py-2 ">
+            <div class="row d-flex align-items-center">
+                <div class="col-6">
+                    <a href="#" class="">
+                        <img src="assets/img/logos/header_logo.png" alt="Bishworang logo" style="width: 150px;">
+                    </a>
+                </div>
+                <div class="d-flex align-items-center justify-content-end col-6">
+                    <form class="d-flex position-relative d-none d-md-block" role="search">
+                        <input class=" me-2 search " type="search" placeholder="Search for items" aria-label="Search">
                         <span class="position-absolute search_icon" type="submit">
                             <i class="fa-solid fa-magnifying-glass" style="color: #604b3b; font-size: 20px;"></i>
                         </span>
                     </form>
-                    <span style="margin-left: 15px;">
-                        <i class="fa-regular fa-heart" style="font-size: 25px; color: #604b3b;"></i>
+                    <span class="d-flex align-items-center" style="margin-left: 15px;">
+                        <i class="fa-brands fa-whatsapp pe-1 d-md-none d-block"
+                            style="font-size: 25px; color: #604b3b; cursor: pointer;"></i>
+                        <i class="fa-solid fa-cart-shopping pe-1  d-md-none d-block"
+                            style="font-size: 25px; color: #604b3b; cursor: pointer;"></i>
+                        <i class="fa-regular fa-heart" style="font-size: 25px; color: #604b3b; cursor: pointer;"></i>
                     </span>
                 </div>
             </div>
         </div>
+
         <!-- ====== logo-search part end ===== -->
 
         <!-- ===== navbar html part start ===== -->
-        <div class="container-fluid">
+        <div id="primaryNavbar" class="container-fluid">
             <div class="row mx-2">
-                <div class="col-1 d-flex align-items-center gap-2">
+                <div class="col-1 d-flex align-items-center gap-2 my-2 my-md-0">
                     <span>
                         <i class="fa-solid fa-table-cells-large" style="color: #604b3b;"></i>
                     </span>
                     <span style="color: #604b3b; font-size: 18px;">Categories</span>
                 </div>
 
-                <div class="col-8">
+                <div class="col-lg-8 col-7">
                     <div class="row">
                         <div class="col-12">
-                            <nav class="navbar navbar-expand-lg navbar-light ">
+                            <nav class="navbar navbar-expand-lg d-none d-lg-block navbar-light ">
                                 <div class="container">
                                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
@@ -120,20 +128,43 @@
                                                 <div class="dropdown-menu" aria-labelledby="arrival">
                                                     <ul>
                                                         <li>
-                                                            <h6 class="dropdown-header">Women item's</h6>
+                                                            <a href="#" class="dropdown-header">Women item's</a>
                                                         </li>
                                                         <li>
-                                                            <h6 class="dropdown-header">Man item's</h6>
+                                                            <a href="#" class="dropdown-header">Man item's</a>
                                                         </li>
                                                         <li>
-                                                            <h6 class="dropdown-header">Kid item's</h6>
+                                                            <a href="#" class="dropdown-header">Kid item's</a>
                                                         </li>
                                                         <li>
-                                                            <h6 class="dropdown-header">Gift & Craft</h6>
+                                                            <a href="#" class="dropdown-header">Gift & Craft</a>
                                                         </li>
                                                         <li>
-                                                            <h6 class="dropdown-header">Home Decor</h6>
+                                                            <a href="#" class="dropdown-header">Home Decor</a>
                                                         </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link nav_link2 dropdown-toggle" href="#" id="arrival"
+                                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Women's Collection
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="arrival">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="dropdown-header">Sharee</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="dropdown-header">Kamiz</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="dropdown-header">Kurta</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="dropdown-header">Exclusive</a>
+                                                        </li>
+
                                                     </ul>
                                                 </div>
                                             </li>
@@ -160,7 +191,7 @@
                     </div>
                 </div>
 
-                <div class="col-3 d-flex align-items-center justify-content-end">
+                <div class="col-lg-3 col-md-4 d-none d-md-flex align-items-center justify-content-end my-md-2 my-lg-0">
                     <div class="hotline">
                         <span><i class="fa-solid fa-phone"></i></span> Hotline
                         <span style="color: #fca03c;">+880 1730-068036</span>
@@ -174,6 +205,110 @@
     </header>
 
     <!-- ============ header html part end ======== -->
+
+    <!-- ======= visible navbar html part start ======= -->
+    <div id="secondaryNavbar" class="container-fluid d-none" style="background-color: #fff438;">
+        <div class="row px-2 mx-0">
+            <div class="col-lg-1 col-2 d-flex justify-content-center align-items-center ">
+                <img src="assets/img/logos/header_logo.png" style="width: 100px;" alt="bhisworang logo">
+            </div>
+
+            <div class="col-lg-8 col-6">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-lg navbar-light py-0 d-none d-lg-block">
+                            <div class="container">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                    <ul class="navbar-nav navbar-nav2">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Home</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link nav_link3 dropdown-toggle" href="#" id="arrival"
+                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                New Arrival
+                                            </a>
+                                            <div class="dropdown-menu " aria-labelledby="arrival">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" class="dropdown-header">Women item's</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="dropdown-header">Man item's</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="dropdown-header">Kid item's</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="dropdown-header">Gift & Craft</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="dropdown-header">Home Decor</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link nav_link3 dropdown-toggle" href="#" id="arrival"
+                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Women's Collection
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="arrival">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" class="dropdown-header">Sharee</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="dropdown-header">Kamiz</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="dropdown-header">Kurta</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="dropdown-header">Exclusive</a>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link nav_link3" href="#">Men's Collection</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link nav_link3" href="#">Kid's Collection</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link nav_link3" href="#">Couple Collection</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link nav_link3" href="#">Festival</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link nav_link3" href="#">JEWELLERY</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 d-flex align-items-center justify-content-end">
+                <div class="hotline">
+                    <span><i class="fa-solid fa-phone"></i></span> Hotline
+                    <span style="color: #fca03c;">+880 1730-068036</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ======= visible navbar html part end ======= -->
 
     <!-- ============ footer html part start ======== -->
 
@@ -277,8 +412,26 @@
 
     <!-- ============ footer html part end ======== -->
 
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati accusantium voluptatum reiciendis magni
+        assumenda fugiat laudantium provident quos? Dolore quam assumenda cum nemo possimus, quae earum odit amet iure
+        ullam quo similique quaerat totam quidem repudiandae officiis suscipit necessitatibus eos repellendus, expedita
+        numquam recusandae voluptates! Possimus ea eligendi praesentium magnam fugit quos aut dolor excepturi id, quam
+        delectus, dolores velit voluptate architecto dicta? Nulla esse veritatis quidem labore voluptate porro quisquam?
+        Debitis consectetur corrupti ad molestiae deserunt dicta atque architecto vel at enim delectus, sed ipsa, id
+        excepturi illo libero doloribus nostrum! Velit, voluptas! Officiis amet quos doloremque voluptatem odit.
+        Voluptatibus sint impedit consequatur quo saepe praesentium totam adipisci expedita numquam sit ipsa, mollitia
+        nemo, sunt quod autem dignissimos doloremque officia fugit. Non quas quos qui rerum deserunt facere quibusdam
+        quis magni laboriosam sunt delectus omnis harum, officia ratione aspernatur culpa illo, vero nemo aliquam
+        reprehenderit iste illum. Libero aliquam error incidunt, hic velit minima dolorum harum, porro atque maiores
+        dolores explicabo officia ex et exercitationem voluptate sed, dicta quaerat perferendis placeat accusantium
+        deleniti at animi. Quod distinctio, quaerat quisquam, eum rerum possimus expedita beatae saepe, officia non
+        omnis nam error asperiores. Consequatur quae unde incidunt ab dolorem dolorum nulla?</p>
+
     <!-- bootstrap cdn link  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="index.js"></script>
+
 </body>
 
 </html>
