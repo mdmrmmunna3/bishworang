@@ -1,3 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
 .search {
     width: 480px;
     border-radius: 5px;
@@ -86,3 +96,54 @@
 .hotline .fa-phone:hover {
     color: #fca03c;
 }
+
+/* header css end  */
+
+/* footer css start  */
+footer {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.footer_img {
+    margin-bottom: 30px;
+}
+
+.footer_img img {
+    width: 120px;
+}
+
+.footer_left_content {
+    line-height: 30px;
+}
+
+.footer_list_container {
+    padding-left: 0;
+}
+
+.footer_list_container li {
+    list-style: none;
+    line-height: 32px;
+
+}
+
+.footer_list_container li a {
+    text-decoration: none;
+    color: #67707b;
+    transition: all linear .3s;
+}
+
+.footer_list_container li a:hover {
+    color: #f27820;
+    padding-left: 10px;
+    transition: all linear .3s;
+}
+
+.social_img img {
+    width: 35px;
+}
+
+.pay_logo img {
+    width: 100%;
+}
+
+/* footer css end */
