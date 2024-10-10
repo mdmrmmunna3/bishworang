@@ -62,3 +62,11 @@ let swiper = new Swiper(".mySwiper", {
 });
 
 // banner swiper end
+
+// initialize toltips 
+document.addEventListener("DOMContentLoaded", function () {
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+});
