@@ -87,3 +87,41 @@ document.querySelectorAll('.shoe_pics').forEach(pics => {
         img.setAttribute('src', originalImage);
     });
 });
+
+// popular swiper 
+const popularSwiper = new Swiper(".mySwiper2", {
+    slidesPerView: 6,
+    spaceBetween: 10,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+
+    breakpoints: {
+        1024: {
+            slidesPerView: 6,
+            spaceBetween: 10,
+        },
+        768: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+        },
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        320: {
+            slidesPerView: 2,
+            spaceBetween: 5,
+        }
+    }
+});

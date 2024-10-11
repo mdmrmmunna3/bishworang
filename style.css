@@ -169,7 +169,7 @@ a {
     display: block;
 }
 
-@media only screen and (max-width: 572px) {
+@media only screen and (max-width: 576px) {
     .video {
         height: 300px;
     }
@@ -328,8 +328,37 @@ a {
     color: #fff;
 }
 
-
 /* feature tab css end */
+
+/* popular swiper css start  */
+.swiper2 {
+    width: 100%;
+    height: 200px;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.swiper-slide2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.swiper-slide2 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* .swiper-slide2 p {
+    position: absolute;
+    z-index: 99;
+    bottom: -46px;
+    left: 40px;
+} */
+
+/* popular swiper css end  */
 
 /* footer css start  */
 footer {
