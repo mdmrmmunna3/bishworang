@@ -70,3 +70,20 @@ document.addEventListener("DOMContentLoaded", function () {
         return new bootstrap.Tooltip(tooltipTriggerEl);
     });
 });
+
+
+// hover change img 
+document.querySelectorAll('.shoe_pics').forEach(pics => {
+    const img = pics.querySelector('.shoe_pict');
+    const originalImage = img.getAttribute('src');
+    const hoverImage = img.getAttribute('data-hover');
+
+    // Change image on hover
+    pics.addEventListener('mouseenter', () => {
+        img.setAttribute('src', hoverImage);
+    });
+
+    pics.addEventListener('mouseleave', () => {
+        img.setAttribute('src', originalImage);
+    });
+});
