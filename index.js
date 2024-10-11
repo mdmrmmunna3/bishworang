@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    // navbar scrolling 
     function handleScroll() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
@@ -124,4 +125,18 @@ const popularSwiper = new Swiper(".mySwiper2", {
             spaceBetween: 5,
         }
     }
+});
+
+
+// jwellery swiper 
+let jewellerySwiper = new Swiper(".mySwiper3", {
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
 });
