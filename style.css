@@ -148,45 +148,6 @@ a {
 
 /* scroling navbar   */
 
-.fam {
-    font-weight: 400px;
-    color: #374151;
-    letter-spacing: .1em;
-    font-family: "Playfair Display", serif;
-}
-
-.video_container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 15px auto;
-    overflow: hidden;
-}
-
-.video {
-    width: 100%;
-    height: 480px;
-    object-fit: fill;
-    display: block;
-}
-
-@media only screen and (max-width: 576px) {
-    .video {
-        height: 300px;
-    }
-}
-
-.subscribe {
-    transition: all linear .3s;
-    background-color: black;
-    border: none;
-    padding: 0 10px;
-}
-
-.subscribe:hover {
-    background-color: rgb(242, 120, 32);
-    transition: all linear .3s;
-}
-
 /* header css end  */
 
 /* banner css start  */
@@ -343,6 +304,12 @@ a {
     justify-content: center;
     align-items: center;
     position: relative;
+    transition: all linear .3s;
+}
+
+.swiper-slide2:hover {
+    transform: scale(1.1);
+    transition: all linear .3s;
 }
 
 .swiper-slide2 img {
@@ -351,14 +318,92 @@ a {
     height: 100%;
 }
 
-/* .swiper-slide2 p {
-    position: absolute;
-    z-index: 99;
-    bottom: -46px;
-    left: 40px;
+/* popular swiper css end  */
+
+/* latest collection css start  */
+.collection_text {
+    font-weight: 400;
+    color: #374151;
+    letter-spacing: .1em;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+}
+
+.img_hover_overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.img_hover_overlay img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* .img_hover_overlay:hover img {
+    transform: scale(1.1);
 } */
 
-/* popular swiper css end  */
+.img_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.img_hover_overlay:hover .img_overlay {
+    opacity: 1;
+}
+
+
+/* latest collection css end  */
+
+/* video letter css start  */
+.fam {
+    font-weight: 400;
+    color: #374151;
+    letter-spacing: .1em;
+    font-family: "Playfair Display", serif;
+}
+
+.video_container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 15px auto;
+    overflow: hidden;
+}
+
+.video {
+    width: 100%;
+    height: 480px;
+    object-fit: fill;
+    display: block;
+}
+
+@media only screen and (max-width: 576px) {
+    .video {
+        height: 300px;
+    }
+}
+
+.subscribe {
+    transition: all linear .3s;
+    background-color: black;
+    border: none;
+    padding: 0 10px;
+}
+
+.subscribe:hover {
+    background-color: rgb(242, 120, 32);
+    transition: all linear .3s;
+}
+
+/* video letter css end */
 
 /* footer css start  */
 footer {
