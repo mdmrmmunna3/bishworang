@@ -155,6 +155,7 @@ a {
     width: 100%;
     height: 450px;
     max-height: 100%;
+    cursor: pointer;
 }
 
 .swiper-slide {
@@ -188,6 +189,7 @@ a {
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .overlay {
@@ -226,6 +228,7 @@ a {
     border-radius: 4px;
     background-color: #eeeeee;
     transition: transform 0.5s linear;
+
 }
 
 .tabbtn:hover {
@@ -297,6 +300,7 @@ a {
     height: 200px;
     max-height: 100%;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .swiper-slide2 {
@@ -332,6 +336,7 @@ a {
 .img_hover_overlay {
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .img_hover_overlay img {
@@ -360,8 +365,20 @@ a {
     opacity: 1;
 }
 
-
 /* latest collection css end  */
+
+/* blog css start  */
+.blog_container {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 10px;
+    border: none;
+}
+
+.blog_container img {
+    width: 100%;
+    height: 130px;
+}
+
+/* blog css end */
 
 /* video letter css start  */
 .fam {
@@ -376,6 +393,7 @@ a {
     max-width: 1200px;
     margin: 15px auto;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .video {
