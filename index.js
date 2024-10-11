@@ -74,8 +74,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // hover change img 
-document.querySelectorAll('.shoe_pics').forEach(pics => {
-    const img = pics.querySelector('.shoe_pict');
+document.querySelectorAll('.hover_arrival_img').forEach(pics => {
+    const img = pics.querySelector('.show_arrival_img');
     const originalImage = img.getAttribute('src');
     const hoverImage = img.getAttribute('data-hover');
 
@@ -139,4 +139,36 @@ let jewellerySwiper = new Swiper(".mySwiper3", {
         el: ".swiper-pagination",
         clickable: true,
     },
+});
+
+// arrival 
+
+const arrivaSwiper = new Swiper(".mySwiper4", {
+    slidesPerView: 6,
+    spaceBetween: 10,
+    loop: true,
+
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+
+    breakpoints: {
+        1024: {
+            slidesPerView: 6,
+            spaceBetween: 10,
+        },
+        768: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+        },
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        320: {
+            slidesPerView: 2,
+            spaceBetween: 5,
+        }
+    }
 });
