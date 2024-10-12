@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bishworang</title>
+    <link rel="shortcut icon" href="assets/img/logos/favicon.ico" type="image/x-icon">
+
+    <!-- font awesome local link  -->
+    <link rel="stylesheet" href="fontAwesome/all.css">
+    <!-- font awesome cdn link  -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> -->
+
+    <!-- boostrap local css link  -->
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+
+    <!-- bootstrap cdn link  -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"> -->
+
+    <!-- swiper cdn link css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- raw/ vanila css link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ============ header html part start ======== -->
+
+    <header>
+        <!-- ==== top header start ===== -->
+        <div class="container-fluid py-2 text-light d-none d-md-block" style="background-color: #ad171a;">
+            <div class="row">
+                <!-- left_content part  -->
+                <div class="col-3 d-flex align-items-center justify-content-around">
+                    <span class="border-end pe-4 d-md-none d-lg-block " style="font-size: 15px;"> <span><i
+                                class="fa-solid fa-mobile-screen"></i></span> +88 01730 068036
+                    </span>
+
+                    <span style="font-size: 15px;"> <span><i class="fa-solid fa-location-dot"></i></span> Our
+                        Outlets</span>
+                </div>
+
+                <!-- marquee middle content  -->
+
+                <div class="col-6">
+                    <marquee behavior="" direction="left" scrollamount="3" class="mx-lg-5 mx-md-3">
+                        <span class="d-flex align-items-center" style="font-size: 14px;">DISCOUNT30 - কুপন কোডটি ব্যবহার
+                            করে ওয়েবসাইট থেকে কেনাকাটায় ৩০%
+                            মূল্যছাড় ! এই অফার সীমিত
+                            সময়ের জন্য</span>
+                    </marquee>
+                </div>
+
+                <!-- right_content part -->
+
+                <div class="col-3 d-flex align-items-center justify-content-end">
+                    <span class="border-end pe-4 d-md-none d-lg-block" style="font-size: 15px;">
+                        <select name="" id="" style="background-color: transparent; border: none; color: white;">
+                            <option class="text-black" value="BDT">BDT</option>
+                            <option class="text-black" value="BDT">USD</option>
+
+                        </select>
+                    </span>
+
+                    <span style="font-size: 15px; padding: 0 20px;"> <span><i class="fa-regular fa-user"></i></span>
+                        Log
+                        In/Sign Up</span>
+                </div>
+
+            </div>
+        </div>
+        <!-- ==== top header end ===== -->
+
+        <!-- ====== logo-search part start ===== -->
+
+        <div class="container-fluid py-2 ">
+            <div class="row d-flex align-items-center">
+                <div class="col-6">
+                    <a href="index.html" class="">
+                        <img src="assets/img/logos/header_logo.png" alt="Bishworang logo" style="width: 150px;">
+                    </a>
+                </div>
+                <div class="d-flex align-items-center justify-content-end col-6">
+                    <form class="d-flex position-relative d-none d-md-block" role="search">
+                        <input class=" me-2 search " type="search" placeholder="Search for items" aria-label="Search">
+                        <span class="position-absolute search_icon" type="submit">
+                            <i class="fa-solid fa-magnifying-glass" style="color: #604b3b; font-size: 20px;"></i>
+                        </span>
+                    </form>
+                    <span class="d-flex align-items-center" style="margin-left: 15px;">
+                        <i class="fa-brands fa-whatsapp pe-1 d-md-none d-block"
+                            style="font-size: 25px; color: #604b3b; cursor: pointer;"></i>
+                        <i class="fa-solid fa-cart-shopping pe-1  d-md-none d-block"
+                            style="font-size: 25px; color: #604b3b; cursor: pointer;"></i>
+                        <i class="fa-regular fa-heart" style="font-size: 25px; color: #604b3b; cursor: pointer;"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====== logo-search part end ===== -->
+
+        <!-- ===== navbar html part start ===== -->
+        <div id="primaryNavbar" class="container-fluid">
+            <div class="row mx-2">
+                <div class="col-1 d-none d-md-flex align-items-center gap-2 my-2 my-md-0">
+                    <span>
+                        <i class="fa-solid fa-table-cells-large" style="color: #604b3b;"></i>
+                    </span>
+                    <span style="color: #604b3b; font-size: 18px;">Categories</span>
+                </div>
+
+                <div class="col-lg-8 col-7">
+                    <div class="row">
+                        <div class="col-12">
+                            <nav class="navbar navbar-expand-lg d-none d-lg-block navbar-light ">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="container">
+
+                                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="index.html">Home</a>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link nav_link2 dropdown-toggle" href="#" id="arrival"
+                                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    New Arrival
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="arrival">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="dropdown-header">Women item's</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="dropdown-header">Man item's</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="dropdown-header">Kid item's</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="dropdown-header">Gift & Craft</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="dropdown-header">Home Decor</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link nav_link2 dropdown-toggle" href="#" id="arrival"
+                                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Women's Collection
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="arrival">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="dropdown-header">Sharee</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="dropdown-header">Kamiz</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="dropdown-header">Kurta</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="dropdown-header">Exclusive</a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link nav_link2" href="#">Men's Collection</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link nav_link2" href="#">Kid's Collection</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link nav_link2" href="#">Couple Collection</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link nav_link2" href="#">Festival</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link nav_link2" href="https://www.bishworang.com.bd/"
+                                                    target="_blank">JEWELLERY</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 d-none d-md-flex align-items-center justify-content-end my-md-2 my-lg-0">
+                    <div class="hotline">
+                        <span><i class="fa-solid fa-phone"></i></span> Hotline
+                        <span style="color: #fca03c;">+880 1730-068036</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- ===== navbar html part end ===== -->
+
+    </header>
+
+    <!-- ============ header html part end ======== -->
+
+    <!-- ======= visible navbar html part start ======= -->
+    <div id="secondaryNavbar" class="container-fluid d-none" style="background-color: #fff438;">
+        <div class="row px-2 mx-0">
+            <!-- Fixed Logo Column -->
+            <div class="col-lg-1 col-2 d-none d-md-flex justify-content-center align-items-center">
+                <a href="index.html">
+                    <img src="assets/img/logos/header_logo.png" style="width: 100px;" alt="bhisworang logo">
+                </a>
+            </div>
+
+            <!-- Collapsible Navbar Column -->
+            <div class="col-lg-8 col-md-6 col-9">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-lg navbar-light py-0">
+                            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                                <ul class="navbar-nav navbar-nav2">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link nav_link3 dropdown-toggle" href="#" id="arrival"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            New Arrival
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="arrival">
+                                            <ul>
+                                                <li><a href="#" class="dropdown-header">Women item's</a></li>
+                                                <li><a href="#" class="dropdown-header">Man item's</a></li>
+                                                <li><a href="#" class="dropdown-header">Kid item's</a></li>
+                                                <li><a href="#" class="dropdown-header">Gift & Craft</a></li>
+                                                <li><a href="#" class="dropdown-header">Home Decor</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link nav_link3 dropdown-toggle" href="#" id="arrival"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Women's Collection
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="arrival">
+                                            <ul>
+                                                <li><a href="#" class="dropdown-header">Sharee</a></li>
+                                                <li><a href="#" class="dropdown-header">Kamiz</a></li>
+                                                <li><a href="#" class="dropdown-header">Kurta</a></li>
+                                                <li><a href="#" class="dropdown-header">Exclusive</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav_link3" href="#">Men's Collection</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav_link3" href="#">Kid's Collection</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav_link3" href="#">Couple Collection</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav_link3" href="#">Festival</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav_link3" href="https://www.bishworang.com.bd/"
+                                            target="_blank">JEWELLERY</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-1 col-3 d-md-none d-flex justify-content-center align-items-center">
+                <img src="assets/img/logos/header_logo.png" style="width: 100px;" alt="bhisworang logo">
+            </div>
+
+            <div class="col-lg-3 col-md-4 d-none d-md-flex align-items-center justify-content-end">
+                <div class="hotline">
+                    <span><i class="fa-solid fa-phone"></i></span> Hotline
+                    <span style="color: #fca03c;">+880 1730-068036</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======= visible navbar html part end ======= -->
+
+    <!-- ======= main html part start ====== -->
+    <main>
+
+        <!-- ======== LATEST FROM THE SEASON html part start ======= -->
+        <div class="container-fluid text-center py-4"
+            style="background-image: url(assets/img/logos/bgImg.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; object-fit: cover; height: 100%;">
+            <h2 class="my-5 latest_titel" style="color: #374151; letter-spacing: 3px;">LATEST FROM THE SEASON</h2>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="collection_text pb-2">
+                        Women Collection
+                    </h4>
+
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide img_hover_overlay">
+                                <img src="assets/img/latest/women/womenCollection1.jpg" loading="lazy"
+                                    alt="women collection img" />
+                                <span class="img_overlay"></span>
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            </div>
+                            <div class="swiper-slide img_hover_overlay">
+                                <img src="assets/img/latest/women/womenCollection2.jpg" loading="lazy"
+                                    alt="women collection img" />
+                                <span class="img_overlay"></span>
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            </div>
+                            <div class="swiper-slide img_hover_overlay">
+                                <img src="assets/img/latest/women/womenCollection3.jpg" loading="lazy"
+                                    alt="women collection img" />
+                                <span class="img_overlay"></span>
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            </div>
+                            <div class="swiper-slide img_hover_overlay">
+                                <img src="assets/img/latest/women/womenCollection4.jpg" loading="lazy"
+                                    alt="women collection img" />
+                                <span class="img_overlay"></span>
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            </div>
+                            <div class="swiper-slide img_hover_overlay">
+                                <img src="assets/img/latest/women/womenCollection5.jpg" loading="lazy"
+                                    alt="women collection img" />
+                                <span class="img_overlay"></span>
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            </div>
+                            <div class="swiper-slide img_hover_overlay">
+                                <img src="assets/img/latest/women/womenCollection6.jpg" loading="lazy"
+                                    alt="women collection img" />
+                                <span class="img_overlay"></span>
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="collection_text pb-2">
+                        Men Collection
+                    </h4>
+
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide img_hover_overlay">
+                                <img src="assets/img/latest/men/menCollection1.jpg" loading="lazy"
+                                    alt="women collection img" />
+                                <span class="img_overlay"></span>
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            </div>
+                            <div class="swiper-slide img_hover_overlay">
+                                <img src="assets/img/latest/men/menCollection2.jpg" loading="lazy"
+                                    alt="women collection img" />
+                                <span class="img_overlay"></span>
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            </div>
+                            <div class="swiper-slide img_hover_overlay">
+                                <img src="assets/img/latest/men/menCollection3.jpg" loading="lazy"
+                                    alt="women collection img" />
+                                <span class="img_overlay"></span>
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            </div>
+                            <div class="swiper-slide img_hover_overlay">
+                                <img src="assets/img/latest/men/menCollection4.jpg" loading="lazy"
+                                    alt="women collection img" />
+                                <span class="img_overlay"></span>
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            </div>
+                            <div class="swiper-slide img_hover_overlay">
+                                <img src="assets/img/latest/men/menCollection5.jpg" loading="lazy"
+                                    alt="women collection img" />
+                                <span class="img_overlay"></span>
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            </div>
+                            <div class="swiper-slide img_hover_overlay">
+                                <img src="assets/img/latest/men/menCollection6.jpg" loading="lazy"
+                                    alt="women collection img" />
+                                <span class="img_overlay"></span>
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ======== LATEST FROM THE SEASON html part end ======= -->
+
+        <!-- ======== New Arrival html part start ======= -->
+        <div class="container-fluid py-4"
+            style="background-image: url(assets/img/logos/bgImg.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; object-fit: cover; height: 100%;">
+            <h3 class="py-3 text-center arrival_titel"><span style="color: #ad171a; ">New</span> Arrivals</h3>
+
+            <div class="row gy-3">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card  card_container2">
+                        <div class="overlay2">
+                            <div class="addToCart addToCart2 addToCart3" data-bs-toggle="tooltip" data-bs-html="true"
+                                data-bs-placement="top" data-bs-title="Quick View">
+                                <i class="fa-regular fa-eye"></i>
+                            </div>
+                            <div class="addToCart addToCart2 addToCart3" data-bs-toggle="tooltip" data-bs-html="true"
+                                data-bs-placement="top" data-bs-title="Favorite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="hover_arrival_img">
+                            <img src="assets/img/newarrival/men/men1.webp"
+                                data-hover="assets/img/newarrival/men/men2.webp" class="card-img-top show_arrival_img"
+                                alt="man arrival img">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="card-body">
+                                <p class="card-title" style="font-size: .75rem; line-height: 1rem; color: #604b3b;">
+                                    BRG-S-SHR-00591</p>
+
+                                <span style="font-size: 18px; color: #604b3b;">BDT 3712.00</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card  card_container2">
+                        <div class="overlay2">
+                            <div class="addToCart addToCart2 addToCart3" data-bs-toggle="tooltip" data-bs-html="true"
+                                data-bs-placement="top" data-bs-title="Quick View">
+                                <i class="fa-regular fa-eye"></i>
+                            </div>
+                            <div class="addToCart addToCart2 addToCart3" data-bs-toggle="tooltip" data-bs-html="true"
+                                data-bs-placement="top" data-bs-title="Favorite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="hover_arrival_img">
+                            <img src="assets/img/newarrival/men/men3.webp"
+                                data-hover="assets/img/newarrival/men/men4.webp" class="card-img-top show_arrival_img"
+                                alt="men arrival img">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="card-body">
+                                <p class="card-title" style="font-size: .75rem; line-height: 1rem; color: #604b3b;">
+                                    BRG-S-SHR-00591</p>
+
+                                <span style="font-size: 18px; color: #604b3b;">BDT 3712.00</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card  card_container2">
+                        <div class="overlay2">
+                            <div class="addToCart addToCart2 addToCart3" data-bs-toggle="tooltip" data-bs-html="true"
+                                data-bs-placement="top" data-bs-title="Quick View">
+                                <i class="fa-regular fa-eye"></i>
+                            </div>
+                            <div class="addToCart addToCart2 addToCart3" data-bs-toggle="tooltip" data-bs-html="true"
+                                data-bs-placement="top" data-bs-title="Favorite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="hover_arrival_img">
+                            <img src="assets/img/newarrival/men/men5.webp"
+                                data-hover="assets/img/newarrival/men/men6.webp" class="card-img-top show_arrival_img"
+                                alt="men arrival img">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="card-body">
+                                <p class="card-title" style="font-size: .75rem; line-height: 1rem; color: #604b3b;">
+                                    BRG-S-SHR-00591</p>
+
+                                <span style="font-size: 18px; color: #604b3b;">BDT 3712.00</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card  card_container2">
+                        <div class="overlay2">
+                            <div class="addToCart addToCart2 addToCart3" data-bs-toggle="tooltip" data-bs-html="true"
+                                data-bs-placement="top" data-bs-title="Quick View">
+                                <i class="fa-regular fa-eye"></i>
+                            </div>
+                            <div class="addToCart addToCart2 addToCart3" data-bs-toggle="tooltip" data-bs-html="true"
+                                data-bs-placement="top" data-bs-title="Favorite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="hover_arrival_img">
+                            <img src="assets/img/newarrival/men/kid1.webp"
+                                data-hover="assets/img/newarrival/men/kid2.webp" class="card-img-top show_arrival_img"
+                                alt="kids arrival img">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="card-body">
+                                <p class="card-title" style="font-size: .75rem; line-height: 1rem; color: #604b3b;">
+                                    BRG-S-SHR-00591</p>
+
+                                <span style="font-size: 18px; color: #604b3b;">BDT 3712.00</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card  card_container2">
+                        <div class="overlay2">
+                            <div class="addToCart addToCart2 addToCart3" data-bs-toggle="tooltip" data-bs-html="true"
+                                data-bs-placement="top" data-bs-title="Quick View">
+                                <i class="fa-regular fa-eye"></i>
+                            </div>
+                            <div class="addToCart addToCart2 addToCart3" data-bs-toggle="tooltip" data-bs-html="true"
+                                data-bs-placement="top" data-bs-title="Favorite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="hover_arrival_img">
+                            <img src="assets/img/newarrival/men/men7.webp"
+                                data-hover="assets/img/newarrival/men/men8.webp" class="card-img-top show_arrival_img"
+                                alt="man arrival img">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="card-body">
+                                <p class="card-title" style="font-size: .75rem; line-height: 1rem; color: #604b3b;">
+                                    BRG-S-SHR-00591</p>
+
+                                <span style="font-size: 18px; color: #604b3b;">BDT 3712.00</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card  card_container2">
+                        <div class="overlay2">
+                            <div class="addToCart addToCart2 addToCart3" data-bs-toggle="tooltip" data-bs-html="true"
+                                data-bs-placement="top" data-bs-title="Quick View">
+                                <i class="fa-regular fa-eye"></i>
+                            </div>
+                            <div class="addToCart addToCart2 addToCart3" data-bs-toggle="tooltip" data-bs-html="true"
+                                data-bs-placement="top" data-bs-title="Favorite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="hover_arrival_img">
+                            <img src="assets/img/newarrival/men/men9.webp"
+                                data-hover="assets/img/newarrival/men/men10.webp" class="card-img-top show_arrival_img"
+                                alt="man arrival img">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="card-body">
+                                <p class="card-title" style="font-size: .75rem; line-height: 1rem; color: #604b3b;">
+                                    BRG-S-SHR-00591</p>
+
+                                <span style="font-size: 18px; color: #604b3b;">BDT 3712.00</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card  card_container2">
+                        <div class="overlay2">
+                            <div class="addToCart addToCart2 addToCart3" data-bs-toggle="tooltip" data-bs-html="true"
+                                data-bs-placement="top" data-bs-title="Quick View">
+                                <i class="fa-regular fa-eye"></i>
+                            </div>
+                            <div class="addToCart addToCart2 addToCart3" data-bs-toggle="tooltip" data-bs-html="true"
+                                data-bs-placement="top" data-bs-title="Favorite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="hover_arrival_img">
+                            <img src="assets/img/newarrival/men/men12.webp"
+                                data-hover="assets/img/newarrival/men/men12.webp" class="card-img-top show_arrival_img"
+                                alt="man arrival img">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="card-body">
+                                <p class="card-title" style="font-size: .75rem; line-height: 1rem; color: #604b3b;">
+                                    BRG-S-SHR-00591</p>
+
+                                <span style="font-size: 18px; color: #604b3b;">BDT 3712.00</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card  card_container2">
+                        <div class="overlay2">
+                            <div class="addToCart addToCart2 addToCart3" data-bs-toggle="tooltip" data-bs-html="true"
+                                data-bs-placement="top" data-bs-title="Quick View">
+                                <i class="fa-regular fa-eye"></i>
+                            </div>
+                            <div class="addToCart addToCart2 addToCart3" data-bs-toggle="tooltip" data-bs-html="true"
+                                data-bs-placement="top" data-bs-title="Favorite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="hover_arrival_img">
+                            <img src="assets/img/newarrival/men/men13.webp"
+                                data-hover="assets/img/newarrival/men/men13.webp" class="card-img-top show_arrival_img"
+                                alt="man arrival img">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="card-body">
+                                <p class="card-title" style="font-size: .75rem; line-height: 1rem; color: #604b3b;">
+                                    BRG-S-SHR-00591</p>
+
+                                <span style="font-size: 18px; color: #604b3b;">BDT 3712.00</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card  card_container2">
+                        <div class="overlay2">
+                            <div class="addToCart addToCart2 addToCart3" data-bs-toggle="tooltip" data-bs-html="true"
+                                data-bs-placement="top" data-bs-title="Quick View">
+                                <i class="fa-regular fa-eye"></i>
+                            </div>
+                            <div class="addToCart addToCart2 addToCart3" data-bs-toggle="tooltip" data-bs-html="true"
+                                data-bs-placement="top" data-bs-title="Favorite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="hover_arrival_img">
+                            <img src="assets/img/newarrival/men/men14.webp"
+                                data-hover="assets/img/newarrival/men/men14.webp" class="card-img-top show_arrival_img"
+                                alt="man arrival img">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="card-body">
+                                <p class="card-title" style="font-size: .75rem; line-height: 1rem; color: #604b3b;">
+                                    BRG-S-SHR-00591</p>
+
+                                <span style="font-size: 18px; color: #604b3b;">BDT 3712.00</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card  card_container2">
+                        <div class="overlay2">
+                            <div class="addToCart addToCart2 addToCart3" data-bs-toggle="tooltip" data-bs-html="true"
+                                data-bs-placement="top" data-bs-title="Quick View">
+                                <i class="fa-regular fa-eye"></i>
+                            </div>
+                            <div class="addToCart addToCart2 addToCart3" data-bs-toggle="tooltip" data-bs-html="true"
+                                data-bs-placement="top" data-bs-title="Favorite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="hover_arrival_img">
+                            <img src="assets/img/newarrival/women/women1.webp"
+                                data-hover="assets/img/newarrival/women/women1.webp"
+                                class="card-img-top show_arrival_img" alt="Women arrival img">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="card-body">
+                                <p class="card-title" style="font-size: .75rem; line-height: 1rem; color: #604b3b;">
+                                    BRG-S-SHR-00591</p>
+
+                                <span style="font-size: 18px; color: #604b3b;">BDT 3712.00</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card  card_container2">
+                        <div class="overlay2">
+                            <div class="addToCart addToCart2 addToCart3" data-bs-toggle="tooltip" data-bs-html="true"
+                                data-bs-placement="top" data-bs-title="Quick View">
+                                <i class="fa-regular fa-eye"></i>
+                            </div>
+                            <div class="addToCart addToCart2 addToCart3" data-bs-toggle="tooltip" data-bs-html="true"
+                                data-bs-placement="top" data-bs-title="Favorite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="hover_arrival_img">
+                            <img src="assets/img/newarrival/women/women2.webp"
+                                data-hover="assets/img/newarrival/women/women2.webp"
+                                class="card-img-top show_arrival_img" alt="Women arrival img">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="card-body">
+                                <p class="card-title" style="font-size: .75rem; line-height: 1rem; color: #604b3b;">
+                                    BRG-S-SHR-00591</p>
+
+                                <span style="font-size: 18px; color: #604b3b;">BDT 3712.00</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card  card_container2">
+                        <div class="overlay2">
+                            <div class="addToCart addToCart2 addToCart3" data-bs-toggle="tooltip" data-bs-html="true"
+                                data-bs-placement="top" data-bs-title="Quick View">
+                                <i class="fa-regular fa-eye"></i>
+                            </div>
+                            <div class="addToCart addToCart2 addToCart3" data-bs-toggle="tooltip" data-bs-html="true"
+                                data-bs-placement="top" data-bs-title="Favorite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="hover_arrival_img">
+                            <img src="assets/img/newarrival/women/women3.webp"
+                                data-hover="assets/img/newarrival/women/women3.webp"
+                                class="card-img-top show_arrival_img" alt="Women arrival img">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="card-body">
+                                <p class="card-title" style="font-size: .75rem; line-height: 1rem; color: #604b3b;">
+                                    BRG-S-SHR-00591</p>
+
+                                <span style="font-size: 18px; color: #604b3b;">BDT 3712.00</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card  card_container2">
+                        <div class="overlay2">
+                            <div class="addToCart addToCart2 addToCart3" data-bs-toggle="tooltip" data-bs-html="true"
+                                data-bs-placement="top" data-bs-title="Quick View">
+                                <i class="fa-regular fa-eye"></i>
+                            </div>
+                            <div class="addToCart addToCart2 addToCart3" data-bs-toggle="tooltip" data-bs-html="true"
+                                data-bs-placement="top" data-bs-title="Favorite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="hover_arrival_img">
+                            <img src="assets/img/newarrival/women/women4.webp"
+                                data-hover="assets/img/newarrival/women/women4.webp"
+                                class="card-img-top show_arrival_img" alt="Women arrival img">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="card-body">
+                                <p class="card-title" style="font-size: .75rem; line-height: 1rem; color: #604b3b;">
+                                    BRG-S-SHR-00591</p>
+
+                                <span style="font-size: 18px; color: #604b3b;">BDT 3712.00</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card  card_container2">
+                        <div class="overlay2">
+                            <div class="addToCart addToCart2 addToCart3" data-bs-toggle="tooltip" data-bs-html="true"
+                                data-bs-placement="top" data-bs-title="Quick View">
+                                <i class="fa-regular fa-eye"></i>
+                            </div>
+                            <div class="addToCart addToCart2 addToCart3" data-bs-toggle="tooltip" data-bs-html="true"
+                                data-bs-placement="top" data-bs-title="Favorite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="hover_arrival_img">
+                            <img src="assets/img/newarrival/women/women5.webp"
+                                data-hover="assets/img/newarrival/women/women6.webp"
+                                class="card-img-top show_arrival_img" alt="Women arrival img">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="card-body">
+                                <p class="card-title" style="font-size: .75rem; line-height: 1rem; color: #604b3b;">
+                                    BRG-S-SHR-00591</p>
+
+                                <span style="font-size: 18px; color: #604b3b;">BDT 3712.00</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card  card_container2">
+                        <div class="overlay2">
+                            <div class="addToCart addToCart2 addToCart3" data-bs-toggle="tooltip" data-bs-html="true"
+                                data-bs-placement="top" data-bs-title="Quick View">
+                                <i class="fa-regular fa-eye"></i>
+                            </div>
+                            <div class="addToCart addToCart2 addToCart3" data-bs-toggle="tooltip" data-bs-html="true"
+                                data-bs-placement="top" data-bs-title="Favorite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="hover_arrival_img">
+                            <img src="assets/img/newarrival/women/women7.webp"
+                                data-hover="assets/img/newarrival/women/women8.webp"
+                                class="card-img-top show_arrival_img" alt="Women arrival img">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="card-body">
+                                <p class="card-title" style="font-size: .75rem; line-height: 1rem; color: #604b3b;">
+                                    BRG-S-SHR-00591</p>
+
+                                <span style="font-size: 18px; color: #604b3b;">BDT 3712.00</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card  card_container2">
+                        <div class="overlay2">
+                            <div class="addToCart addToCart2 addToCart3" data-bs-toggle="tooltip" data-bs-html="true"
+                                data-bs-placement="top" data-bs-title="Quick View">
+                                <i class="fa-regular fa-eye"></i>
+                            </div>
+                            <div class="addToCart addToCart2 addToCart3" data-bs-toggle="tooltip" data-bs-html="true"
+                                data-bs-placement="top" data-bs-title="Favorite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="hover_arrival_img">
+                            <img src="assets/img/newarrival/women/women9.webp"
+                                data-hover="assets/img/newarrival/women/women10.webp"
+                                class="card-img-top show_arrival_img" alt="Women arrival img">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="card-body">
+                                <p class="card-title" style="font-size: .75rem; line-height: 1rem; color: #604b3b;">
+                                    BRG-S-SHR-00591</p>
+
+                                <span style="font-size: 18px; color: #604b3b;">BDT 3712.00</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- ======== New Arrival html part end ======= -->
+
+    </main>
+    <!-- ======= main html part end ====== -->
+
+    <!-- ============ footer html part start ======== -->
+    <footer class="px-5 pt-5 container-fluid">
+        <div class="row">
+            <!-- footer left content  -->
+            <div class="col-lg-5 col-md-6 text-lg-start text-center mb-4">
+                <div class="footer_img">
+                    <a href="index.html">
+                        <img src="assets/img/logos/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="footer_left_content">
+                    <span class="fs-4" style="color: #56606d; font-weight: 500;">Contact</span> <br>
+                    <span style="color: #67707b;"><span style="color: #56606d; font-weight: 600;">Address:</span> West
+                        Lamapara , Shibu
+                        Market, Link Road, <br>
+                        Narayanganj - 1420</span> <br>
+                    <span style="color: #67707b;"><span style="color: #56606d; font-weight: 600;">Phone:</span> +88
+                        01730 068 036</span>
+                    <br>
+                    <span style="color: #67707b;"><span style="color: #56606d; font-weight: 600;">Hours:</span> 10 AM –
+                        7PM, Sat -
+                        Thu</span>
+                </div>
+            </div>
+
+            <!-- footer-middle content  -->
+
+            <div class="col-lg-2 col-md-6 text-lg-start text-center mb-4">
+                <h4>About</h4>
+
+                <!-- list  -->
+                <ul class="footer_list_container">
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Delivery Policy</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Refund Policy</a></li>
+                    <li><a href="">Return-Policy</a></li>
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Our Outlets Address</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-6 text-lg-start text-center mb-4">
+                <h4>My Account </h4>
+
+                <!-- list  -->
+                <ul class="footer_list_container">
+                    <li><a href="">Sign In</a></li>
+                    <li><a href="">My Profile</a></li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">Order</a></li>
+                </ul>
+            </div>
+
+            <!-- footer right content  -->
+            <div
+                class="col-lg-3 col-md-6 text-lg-start text-center d-flex justify-content-center justify-content-md-end align-items-center mb-4">
+                <div>
+                    <h4>Social Media</h4>
+                    <div class="social_img">
+                        <a href="https://www.facebook.com/">
+                            <img src="assets/img/logos/facebook.png" alt="facebook">
+                        </a>
+                        <a href="https://whatsapp.com/">
+                            <img src="assets/img/logos/whatsapp.png" alt="whatsapp">
+                        </a>
+                        <a href="https://www.instagram.com/">
+                            <img src="assets/img/logos/instagram.png" alt="instagram">
+                        </a>
+                        <a href="https://www.youtube.com/">
+                            <img src="assets/img/logos/youtube.png" alt="youtube">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- payment logo  -->
+        <div class="row">
+            <div class="col-12 pay_logo">
+                <img src="asset/img/Pay_With_logo.png" alt="">
+            </div>
+        </div>
+
+    </footer>
+    <!-- footer bottom content  -->
+    <div class="container-fluid py-3" style="background-color: #f3f4f6;">
+        <div class="row">
+            <div class="col-md-5 text-md-start text-center">
+                <span style="color: #67707b;">&copy; 2022, <span
+                        style="color: #56606d; font-weight: 600;">Bishworang</span> | All right
+                    reserved</span>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-3 text-md-end text-center">
+                <span style="color: #67707b;">Designed by <span style="color: #ad171a;">Wave Box</span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ footer html part end ======== -->
+
+    <!-- bootstrap local link  -->
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!-- bootstrap cdn link  -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+
+    <!-- swiper cdn link for js  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

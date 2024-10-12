@@ -582,3 +582,14 @@ footer {
 }
 
 /* footer css end */
+.latest_titel {
+    letter-spacing: .1em;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+}
+
+.arrival_titel {
+    letter-spacing: .1em;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+}
