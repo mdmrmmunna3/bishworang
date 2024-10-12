@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function () {
     const primaryNavbar = document.getElementById('primaryNavbar');
     const secondaryNavbar = document.getElementById('secondaryNavbar');
@@ -17,24 +16,22 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // navbar scrolling 
+    // Navbar scrolling function
     function handleScroll() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-        if (Math.abs(lastScrollTop - scrollTop) <= delta)
-            return;
+        if (Math.abs(lastScrollTop - scrollTop) <= delta) return;
 
         if (scrollTop > lastScrollTop && scrollTop > navbarHeight) {
-            // Scroll Down
+            // Scrolling down: hide primary, show secondary navbar
             primaryNavbar.classList.add('hide');
             secondaryNavbar.classList.remove('d-none');
             secondaryNavbar.classList.add('show');
-        } else {
-            // Scroll Up
-            if (scrollTop + window.innerHeight < document.body.scrollHeight) {
+        } else if (scrollTop + window.innerHeight < document.body.scrollHeight) {
+            // Scrolling up and not yet at the top
+            if (scrollTop < navbarHeight) {
                 primaryNavbar.classList.remove('hide');
                 secondaryNavbar.classList.remove('show');
-                // Optionally add back the d-none after the transition
                 setTimeout(() => {
                     if (!secondaryNavbar.classList.contains('show')) {
                         secondaryNavbar.classList.add('d-none');
@@ -46,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
         lastScrollTop = scrollTop;
     }
 });
+
 
 
 // banner swiper start
